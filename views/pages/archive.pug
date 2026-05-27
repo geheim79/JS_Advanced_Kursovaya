@@ -1,0 +1,12 @@
+extends ../layouts/main.pug
+
+block content
+  h2 Архив завершённых задач
+
+  if tasks.length > 0
+    each task in tasks
+      div.task-card
+        h3= task.title
+        p.status-text Статус: ✅ Выполнено
+  else
+    p Завершённых задач пока нет.

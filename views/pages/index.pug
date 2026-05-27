@@ -1,0 +1,11 @@
+extends ../layouts/main.pug
+
+block content
+  h2 Список задач
+
+  form#task-form
+    input#task-input(type="text" placeholder="Введите название задачи" required)
+    button(type="submit") Добавить задачу
+
+  main
+    // Здесь JS создаст карточки задач

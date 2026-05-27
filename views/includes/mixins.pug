@@ -1,0 +1,11 @@
+mixin taskCard(title, status)
+  div.task-card
+    h3= title
+
+    if status === 'done'
+      p.status-text Статус: ✅ Выполнено
+    else
+      p.status-text Статус: ⏳ В процессе
+
+    button.complete ✔
+    button.delete ✖
